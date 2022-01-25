@@ -22,10 +22,10 @@ tenendo conto che l’array non dovrà contenere lo stesso numero più di una vo
         
         if (!in_array($randNum, $array)){
             $array[] = $randNum;
-        };
-        echo $randNum . "<br>";  
+        };    
     }
-
+    
+var_dump($array);
 ?>
     
 </body>
