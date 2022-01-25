@@ -20,14 +20,18 @@ $array = [];
     <h1>Random Numbers</h1>
 
 <?php 
-    for ($i = 0; $i < 15; $i++) {
+
+    $array = [];
+
+    while (count($array) < 15) {
         $randNum = rand(1,100);
+        
         if (!in_array($randNum, $array)){
-           
             $array[] = $randNum;
         };
-        echo $randNum . "<br>";
+        echo $randNum . "<br>";  
     }
+
 ?>
     
 </body>
